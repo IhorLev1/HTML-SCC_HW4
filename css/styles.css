@@ -77,9 +77,7 @@ header {
 
 .headers::after {
   display: block;
-  margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 92px;
+  margin: 32px auto 92px;
   content: "";
   width: 165px;
   height: 7px;
@@ -93,7 +91,6 @@ header {
 .products-items {
   float: left;
   width: 258px;
-  height: 326px;
   list-style: none;
   margin-right: 26px;
   margin-bottom: 30px;
@@ -104,12 +101,7 @@ header {
 .products-items:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
-.price-block {
-  width: 258px;
-  height: 40px;
-  margin: 0;
-  float: left;
-}
+
 .name-product {
   float: left;
   width: 204px;
@@ -118,14 +110,13 @@ header {
   box-sizing: border-box;
   padding-top: 4px;
   padding-left: 14px;
-  background-color: #323232;
 }
 
 .price-product {
   float: right;
   width: 54px;
   height: 40px;
-  background-color: #8c8c8c;
+  background-color: rgba(255, 255, 255, 0.301);
   font-size: 18px;
   line-height: 32px;
   font-family: "Roboto";
@@ -137,10 +128,14 @@ header {
   box-sizing: border-box;
 }
 
+.price-block {
+  background-color: #323232;
+}
+
 .img-block {
   background-color: #e9f0fd;
 }
-.name-product {
+.link-name {
   text-decoration: none;
   font-size: 18px;
   line-height: 32px;
@@ -196,12 +191,16 @@ header {
 /* BUTTON */
 .news-list-button {
   background-color: #1abc9c;
-  color: #fff;
   border: none;
   cursor: pointer;
+  padding: 13px 46px;
+  border-radius: 5px;
+}
+
+.link-button-read {
+  text-decoration: none;
+  color: #fff;
   font-size: 16px;
   line-height: 26px;
   font-weight: 300;
-  padding: 13px 46px;
-  border-radius: 5px;
 }
